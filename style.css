@@ -14,6 +14,7 @@ body {
     justify-content: space-between;
     padding: 10px 20px;
     background: #333;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -159,7 +160,7 @@ body {
 .carrossel {
     width: 100%;
     height: 0;
-    padding-top: 400px; /* Proporção de 1200x500 */
+    padding-top: 56.25%; /* Proporção 16:9 */
     position: relative;
     overflow: hidden;
     margin-top: 10px;
@@ -670,6 +671,26 @@ textarea#orderNotes {
         justify-content: flex-start;
     }
 
+    .carrossel {
+        padding-top: 56.25%; /* Proporção 16:9 */
+    }
+
+    .destaque h1 {
+        font-size: 1.2em;
+    }
+
+    .produto {
+        margin-bottom: 10px;
+    }
+
+    .produto img {
+        max-height: 80px;
+    }
+
+    .produto button {
+        margin-top: 5px;
+    }
+
     .order-confirmation {
         width: 100%;
         padding: 20px;
@@ -681,9 +702,5 @@ textarea#orderNotes {
 
     .credit {
         font-size: 8px;
-    }
-
-    .carrossel {
-        padding-top: 50%;
     }
 }
